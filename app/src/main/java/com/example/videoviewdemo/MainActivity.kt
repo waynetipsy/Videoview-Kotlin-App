@@ -20,5 +20,7 @@ class MainActivity : AppCompatActivity() {
         val uri : Uri = parse("android.resource://"+packageName+"/"+R.raw.wisdom)
         videoView.setMediaController(mediaController)
         videoView.setVideoURI(uri)
+        videoView.requestFocus()
+        videoView.start()
     }
 }
